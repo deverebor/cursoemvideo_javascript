@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em Javascript - Lucas Souza</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form id="frm">
+        <div id="container">
+            <div id="topo">
+                <header>
+                    <h1>Calculadora em Javascript</h1>
+                    <h2>A pratica leva a perfeição</h2>
+                </header>
+            </div>
+            <div id="menu">
+            </div>
+            <section>
+                <div id="left">
+                    <div class="bloco">
+                        <span>Nome: </span>
+                        <input type="text" name="txtnome" placeholder="Introduza o seu nome">
+                        <input id="enviar" type="button" value="Enviar" onClick="ola('Ola')">
+                    </div>
+                    <div class="bloco1">
+                        <span>Introduza os numeros:</span>
+                        <input type="text" size="2" id="n1" placeholder="n1">
+                        <input type="text" size="2" id="n2" placeholder="n2"><br><br>
+                        <input type="button" value="+" onClick="calc(this)">
+                        <input type="button" value="-" onClick="calc(this)">
+                        <input type="button" value="*" onClick="calc(this)">
+                        <input type="button" value="/" onClick="calc(this)">
+                        <br><br>
+                        <input type="button" value="Limpar" onClick="limpar()" />
+                        <input type="button" value="Enviar" onClick="ola('Ola')">
+                    </div>
+                </div>
+
+                <aside>
+                    <div id="right">
+                        <p> Essa calculadora foi feita por mim( Lucas Pereira Souza) com a finalidade de treinar a linguagem Javascript. Um calculadora simples e com um intuito mais simples ainda.</p>
+                    </div>
+                </aside>
+        </div>
+        </section>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

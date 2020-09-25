@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title> Testando fade com JS</title>
+</head>
+
+<body>
+    <div id="texto" class="header_title">
+        <h2>TEXTO 1</h2>
+    </div>
+    <script>
+        //Função para criar um fade no texto do site.
+        $(function() {
+            $("#texto").hide();
+        });
+
+        var i = 2;
+        setInterval(function() {
+            $("#texto").fadeIn(2000).delay(5000);
+            $("#texto").fadeOut(2000, function() {
+                $("#texto").html("<h2>TEXTO " + i + "</h2>");
+                i++;
+            });
+        }, 2000);
+    </script>
+</body>
+
+</html>

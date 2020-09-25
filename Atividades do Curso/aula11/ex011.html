@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ent-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a minha nacionalidade ?</title>
+</head>
+
+<body>
+    <h1>Descubra se você é um brasileiro!</h1>
+    Digite o nome do seu país de origem <input type="text" name="txtpais" id="txtpais">.
+    <input type="button" value="Verificar" onclick="resultado()">
+    <div id="res">
+
+    </div>
+    <script>
+        //Sempre que for puxar uma variável para ser tratada, verifique se você está puxando o id certo de onde está ela.
+        function resultado() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var local = String(txtp.value)
+            res.innerHTML = `<p>Você é do <strong>${local}</strong></p>`
+            if (local == 'Brasil') {
+                res.innerHTML += (`<p>Você é <strong>Brasileiro</strong>!</p>`)
+            } else {
+                res.innerHTML += (`<p>Você é <strong>estrangeiro!</strong></p>`)
+            }
+        }
+    </script>
+</body>
+
+</html>

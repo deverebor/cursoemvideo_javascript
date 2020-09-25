@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Curso - Java Script</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        
+        h1 {
+            color: rgb(255, 166, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 * n2
+        window.alert(`A multiplicação entre ${n1} e ${n2} resulta em ${s}`)
+            /*
+            Como eu não defini que o valor a ser colocado é númerico o JS 
+            considerou como string, ou seja, caractere.
+            (numer + number) para adição
+            (string + string) para concatenação
+
+            O comando window.alert('') retorna uma string, para mudar o valor dela pra number
+            devemos tratar esse dado ou valor. Para fazer isso usamos o Number.parseInt, parseFloat 
+            ou somente Number, que fará com que que o JS defina o valor númerico a ser
+            digitado pelo usuário.
+            */
+    </script>
+</body>
+
+</html>

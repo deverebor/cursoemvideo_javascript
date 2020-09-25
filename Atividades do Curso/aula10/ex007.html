@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <style>
+        /*Configuração do site*/
+        
+        body {
+            text-align: center;
+            font: normal 18pt Arial;
+            background-color: rgba(31, 67, 88, 0.411);
+        }
+        
+        div#cabecalho {
+            margin-bottom: 180px;
+        }
+        
+        h2 {
+            font: normal 16pt Arial;
+        }
+        
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        /* Configuração da parte de soma*/
+        
+        div#soma {
+            text-align: left;
+            margin-left: 70px;
+        }
+        
+        div#soma h1 {
+            margin-bottom: 50px;
+        }
+        
+        div#res {
+            margin-top: 20px;
+        }
+        /*Confoguração da parte de subtração*/
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>Calculadora</h1>
+        <h2>As 4 operações (Soma, Subtração, Divisão e Multiplicação)</h2>
+    </div>
+    <div id="soma">
+        <h1>Soma: </h1>
+        <input type="number" name="soma1" id="soma1" /> +
+        <input type="number" name="soma2" id="soma2" />
+        <input type="button" value="Somar" onclick="somar()" />
+        <div id="res1">Resultado: </div>
+    </div>
+    <div id="subtracao">
+        <h1>Subtração: </h1>
+        <input type="number" name="sub1" id="sub1" /> -
+        <input type="number" name="sub2" id="sub2" />
+        <input type="button" value="Subtrair" onclick="subtrair()" />
+        <div id="res2">Resultado: </div>
+    </div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('soma1')
+            var tn2 = window.document.querySelector('input#soma2')
+            var res1 = window.document.getElementById('res1')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s1 = tn1 + tn2
+            res1.innerHTML = `A soma entre ${tn1} e ${tn2} é igual a: <strong>${s1}</strong>`
+        }
+
+        function subtrair() {
+            var subn1 = window.document.getElementById('sub1')
+            var subn2 = window.document.getElementById('sub2')
+            var res2 = window.document.getElementById('res2')
+            var subt1 = Number(subn1.value)
+            var subt2 = Number(subn2.value)
+            var subRes = subn1 - subn2
+            res2.innerHTML = `A subtração entre ${subn1} e ${subn2} é igual a: <strong>${subRes}</strong>`
+        }
+    </script>
+</body>
+
+</html>

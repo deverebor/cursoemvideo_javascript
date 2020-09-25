@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiros passom com DOM</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif 18pt;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai um resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <script>
+        //O valor entre [] indica a tag que eu estou trabalhando, se o comando estiver no plural, como o getElementsByTagName()[] 0 indica a primera 1 a segunda e assim sucessivamente.
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+    </script>
+</body>
+
+</html>

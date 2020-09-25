@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrando Documentos Na Tela - Curso JavaScript</title>
+    <style>
+        b {
+            font: normal 30pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var nome = window.prompt('Qual seu nome ? ')
+        document.write(`Olá, ${nome}! Seu nome possui ${nome.length} letras!!!</br>`)
+        document.write(`O seu nome em maiúsculas é ${nome.toLocaleUpperCase()} </br>`)
+        document.write(`O seu nome em minusculas é ${nome.toLocaleLowerCase()} </br>`)
+            /* 
+                O comando document.write escreve no documento Html o resultado que foi escrito pelo 
+                usuário. O comando retorna como um <p> </p> ou seja um paragráfo
+            */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+body {
+    background: rgb(70, 142, 236);
+    font: normal 18pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    /*Comando para arredondar as bordas de uma section ou de algo.*/
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    /*Primeiro valor é o deslocamento vertical, o segundo horizontal e o terceiro o espalhamento. Por ultimo a cor*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Curso - Java Script</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        
+        h1 {
+            color: rgb(255, 166, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        //A variavél nome recebe o valor que for digitado no prompt e armazena na memória. 
+        var nome = window.prompt('Qual seu nome ?')
+            /*
+            Fazendo com oque apareça um aviso na tela com o retorno da variável
+            o sinal de + nesse caso tem função de concatenação.
+            Para por uma continuação depois de declarar a variável se concaltena novamente,
+            colocando o restante da frase.
+            */
+            //window.alert('Prazer em te conhecer, ' + nome)
+        window.alert('Prazer em te conhecer, ' + nome + '! Espero que goste do nosso site!')
+    </script>
+</body>
+
+</html>
