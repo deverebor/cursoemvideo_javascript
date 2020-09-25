@@ -12,4 +12,4 @@ Gostaria de agradecer ao professor e toda a equipe do Curso Em Vídeo pelo curso
 REDES SOCIAIS DO CURSO EM VÍDEO:
 
 YouTube: https://www.youtube.com/cursoemvideo  
-Twitter: twitter.com/cursosemvideo
+Twitter: https://twitter.com/cursosemvideo
