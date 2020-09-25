@@ -1,4 +1,4 @@
-# Projeto de conclusão do Curso em Vídeo
+# Atividades do Curso em Vídeo - JavaScript.
 ## Curso regido pelo Professor Gustavo Guanabara.
 
 Nesse curso de 33 aulas aprendemos **JavaScript** e **ECMAScript**.
